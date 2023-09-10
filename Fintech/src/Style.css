@@ -1,0 +1,136 @@
+html {
+  --color-1: #110963;
+  --color-2: #110963;
+  --color-3: #ffff;
+  --color-4: #ffff;
+  --color-5: #110963;
+  --gap-s: 0.625rem;
+  --gap: 1.25rem;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  color: var(--color-3);
+  background: var(--color-5);
+}
+
+.box {
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background-color: var(--color-3);
+  color: var(--color-1);
+}
+
+.box a {
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.mb {
+  margin-bottom: var(--gap);
+}
+
+.bg-1 {
+  background: var(--color-3);
+}
+
+.bg-2 {
+  background: var(--color-5);
+}
+
+.bg-3 {
+  background: var(--color-5);
+}
+
+.bg-4 {
+  background: var(--color-5);
+}
+
+.bg-5 {
+  background: var(--color-5);
+}
+
+.container {
+  display: grid;
+  padding: var(--gap);
+  gap: var(--gap);
+  grid-template-columns: 240px auto;
+}
+
+/* SideNav */
+
+.resumo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-5);
+}
+
+.resumo h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--gap);
+  color: var(--color-5);
+}
+
+.venda {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap-s);
+  align-items: center;
+  color: var(--color-5);
+  
+}
+.venda div:last-child {
+  justify-self: end;
+  color: var(--color-2)
+}
+
+.venda a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidenav{
+  height: 250px;
+}
+.sidenav li{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+
+.sidenav a {
+  flex: 1;
+  font-size: 1.125rem;
+  padding: var(--gap-s);
+}
